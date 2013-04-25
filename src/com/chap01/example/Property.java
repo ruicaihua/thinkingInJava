@@ -11,6 +11,11 @@ public class Property {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println(new Date());
+		try {
+			Thread.currentThread().sleep(5*1000);
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
 		Properties properties = System.getProperties();
 		properties.list(System.out);
 		System.out.println("----------------Memory Usage------------------");
